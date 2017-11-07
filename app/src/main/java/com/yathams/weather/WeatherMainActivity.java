@@ -33,7 +33,7 @@ public class WeatherMainActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences("com.yathams.weather", 0);
 
 
-        binding.buttonSearch.setOnClickListener(view -> {
+        binding.buttonSearch.setOnClickListener(view -> { //This is Lambda expression Java 8
             //Handle the error message views
             binding.progressBar.setVisibility(View.VISIBLE);
             binding.progressContainer.setVisibility(View.VISIBLE);
