@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="city_name">City name</string>
+    <string name="search">Search</string>
+    <string name="wind">Wind</string>
+    <string name="pressure">Pressure</string>
+    <string name="humidity">Humidity</string>
+    <string name="sunset_time">sunset time</string>
+    <string name="sunrise_time">sunrise time</string>
+    <string name="high_and_low_temperatures">High and Low temperatures</string>
+    <string name="weather_icon">weather icon</string>
+    <string name="error_message">Something went wrong, Please tray again...</string>
+</resources>
