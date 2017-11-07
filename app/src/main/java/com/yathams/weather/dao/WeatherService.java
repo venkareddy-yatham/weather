@@ -1,4 +1,4 @@
-package com.yathams.weather;
+package com.yathams.weather.dao;
 
 import com.yathams.weather.dao.WeatherResponse;
 

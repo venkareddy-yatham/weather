@@ -1,8 +1,5 @@
 package com.yathams.weather.dao;
 
-import android.util.Log;
-
-import com.yathams.weather.WeatherService;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,7 +8,6 @@ import java.util.concurrent.TimeUnit;
 import okhttp3.OkHttpClient;
 import retrofit2.Call;
 import retrofit2.Callback;
-import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -20,7 +16,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 
 public class WeatherServiceManager {
-    private static final String TAG = "WeatherServiceManager";
     private static WeatherServiceManager serviceManager;
     private final String BASE_URL = "http://api.openweathermap.org/data/2.5/";
     private final String APP_ID = "c5847d937c149b421a19fb22856edd61";
