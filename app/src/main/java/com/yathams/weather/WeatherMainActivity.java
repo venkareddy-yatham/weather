@@ -44,7 +44,7 @@ public class WeatherMainActivity extends AppCompatActivity {
                 //Hide the soft keyboard
                 InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
                 imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
-                weatherServiceManager.getCurranetWeather(keyWord, new Callback<WeatherResponse>() {
+                weatherServiceManager.getCurrentWeather(keyWord, new Callback<WeatherResponse>() {
                     @Override
                     public void onResponse(Call<WeatherResponse> call, Response<WeatherResponse> response) {
 

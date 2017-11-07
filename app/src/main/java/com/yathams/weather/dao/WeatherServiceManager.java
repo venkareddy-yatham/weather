@@ -32,6 +32,10 @@ public class WeatherServiceManager {
 
     private WeatherService weatherService;
 
+    /**
+     * Constructor for WeatherServiceManager
+     * it initializes the Retrofit object.
+     */
     private WeatherServiceManager() {
         OkHttpClient okHttpClient = new OkHttpClient().newBuilder()
                 .connectTimeout(20, TimeUnit.SECONDS)
@@ -47,6 +51,10 @@ public class WeatherServiceManager {
 
     }
 
+    /**
+     *
+     * @return Singleton instance
+     */
     public static WeatherServiceManager getInstance() {
         if (serviceManager == null) {
             serviceManager = new WeatherServiceManager();
@@ -54,7 +62,12 @@ public class WeatherServiceManager {
         return serviceManager;
     }
 
-    public void getCurranetWeather(String cityName, Callback<WeatherResponse> callback) {
+    /**
+     * This makes weather API call
+     * @param cityName
+     * @param callback
+     */
+    public void getCurrentWeather(String cityName, Callback<WeatherResponse> callback) {
 
         Map<String, String> queryMap = new HashMap<>();
         queryMap.put(KEY_APP_ID, APP_ID);
